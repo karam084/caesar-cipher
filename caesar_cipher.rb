@@ -1,7 +1,4 @@
-# caesar = "What a string!".chars.map(&:ord)
-# caesar="What a string!".chars.map{|c| c.ord}
-# shifted =caesar.map{|c| c+5}
-# shifted.map!{|c| c.chr}.join
+
  def caesar_cipher(string, shift)
     caeser_chars = []
     string.each_char do |char|
@@ -15,10 +12,4 @@
     end
     caeser_chars.join
 end
-
-#   caesar = string.chars.map(&:ord)
-#   shifted = caesar.map{|c| c+shift}
-#   shifted.map!{|c| c.chr}.join
-# end
-
 puts(caesar_cipher("What a string!", 5 ))
